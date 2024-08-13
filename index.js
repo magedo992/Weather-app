@@ -25,9 +25,8 @@ app.get('/weather/:city',async (req,res)=>{
     res.json(resopnse.data)
 })
 
-app.listen(3000,(err)=>{
-if(err)
-    console.log(err,'error');
+app.listen(3000,()=>{
+
 
 console.log('hosted on port 3000');
 
