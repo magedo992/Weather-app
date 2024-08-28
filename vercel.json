@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "builds": [
+    {
+      "src": "index.js", // or your main server file
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)", // Match all routes
+      "dest": "/index.js" // Handle them with your Express app
+    }
+  ]
+}
